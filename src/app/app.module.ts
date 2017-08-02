@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpModule }    from '@angular/http';
+import { MaterialModule } from '@angular/material';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule, // <-- import the FormsModule before binding with [(ngModel)]
     HttpModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    MaterialModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]

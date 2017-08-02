@@ -1,0 +1,26 @@
+<md-sidenav-container fullscreen>
+	<md-sidenav #start>
+		<md-nav-list>
+			<md-list-item><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></md-list-item>
+			<md-list-item><a routerLink="/heroes" routerLinkActive="active">heroes</a></md-list-item>
+		</md-nav-list>
+		<hr>
+		<button md-button (click)='start.close()'>CLOSE</button>
+	</md-sidenav>
+
+	<md-toolbar color='primary'>
+		<button md-icon-button (click)='start.open()'><md-icon>menu</md-icon></button>
+		{{ title }}
+	</md-toolbar>
+
+	<div class="main-content">
+		<router-outlet></router-outlet>
+	</div>
+</md-sidenav-container>
+
+<!-- <h1>{{ title }}</h1>
+<nav>
+	<a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+	<a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+<router-outlet></router-outlet> -->
