@@ -29,3 +29,7 @@ body, input[text], button {
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+
+md-input-container {
+  width: 70%;
+}

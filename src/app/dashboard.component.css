@@ -60,3 +60,9 @@ h4 {
     min-width: 60px;
   }
 }*/
+
+.dashboard-card {
+  width: 300px;
+  display: inline-block;
+  margin-right: 15px;
+}
